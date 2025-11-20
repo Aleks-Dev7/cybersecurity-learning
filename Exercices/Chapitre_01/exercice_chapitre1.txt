@@ -1,0 +1,52 @@
+Partie 2 : Exercice 2.1 : J'ai utilisé la commande "mkdir -p [Le Nom des dossiers]".
+Exercice 2.2 : J'ai utilisé la commande "ls" et "ls -l" pour me montrer les dossiers que j'avais créé.
+
+Partie 3 : Exercice 3.1 : J'ai utilisé la commande "touch targets.txt notes.txt tools_list.txt" en étant dans reconnaissance.
+
+Exercice 3.2 : J'ai utilisé la commande "echo "nmap" > tools_list.txt" puis la commande "echo "gobuster" >> tools_list.txt" etc...
+
+Exercice 3.3 : J'utilise la commande "cat tools_list.txt" pour pouvoir afficher ce qu'il y a écrit dans le fichier txt.
+
+Exercice 3.4 : J'utilise ensuite cette commande en étant dans reconnaissance pour copier un fichier et modifier son nom dans un autre dossier : "mv tools_list.txt /home/alex/cybersec_training/offensive/exploitation/exploit_tools.txt"
+
+Exercice 3.5 : Je me dirige ensuite dans exploitation pour ajouter deux nouveaux outils dans 'exploit_tools.txt' grâce aux cd et j'utilise la commande "echo "metasploit" > exploit_tools.txt" et la commande "echo "sqlmap" >> exploit_tools.txt".
+
+Exercice 3.6 : Je me dirige dans le dossier logs où je vais utiliser la commande "touch access.log error.log auth.log system.log security.log"
+
+Exercice 3.7 : Pour ceci j'ai effectué la commande "echo "[CE QU'IL Y A ECRIT] > (ou >>) auth.log
+
+Partie 4 : Exercice 4.1 : Pour ceci je me suis rendu dans /home/alex/ et j'ai tapé la commande "fing cybersec_training -name "*.txt""
+
+Exercice 4.2 : Toujours au même endroit que pour la question 4.1 j'ai tapé la commande "grep -r "nmap" cybersec_training/"
+
+Exercice 4.3 : Dans cybersec_training  je tape la commande "cat defensive/logs/auth.log | grep "Login" | wc -l
+
+Exercice 4.4 : Toujours au même endroit que la question 4.3 je tape la commande "grep "failed" defensive/logs/auth.log
+
+Exercice 4.5 : Je n'ai pas compris comment faire
+
+Exercice 4.6 : Je suis aller dans le dossier où se trouvait "forensics/" et j'ai utilisé la commande "rm -rf forensics/"
+
+Exercice 4.7 : J'ai créé un fichier README.md avec lequel je suis rentré dedans pour écrire grâce à la commande "nano README.md" et j'ai pu y mettre le texte qui était attendu
+
+Partie 5 : Exercice 5.1 : J'ai utilisé la commande "ls -t"
+
+Exercice 5.2 : J'ai utilisé la commande "find cybersec_training/ -type f | wc -l"
+
+Partie B : Questions théorique :
+
+Question 1 : rm permet de supprimer un fichier alors que rm -r permet de supprimer un dossier  de façon recursive
+
+Question 2 : Pour afficher les 5 dernières lignes de auth.log il faut utiliser la commande "tail -n 5 auth.log"
+
+Question 3 : Il faut utiliser la commande "wc -w tools_list.txt"
+
+Question 4 : Elle me sort les lignes où ont retrouve le mot failed
+
+Question 5 : Car cette commande supprime le système
+
+Question 6 : La différence c'est ">" va écrire dans la première ligne et remplace la ligne qui est déjà présente si il y'en a une alors que ">>" va implémenter les lignes à la fin du fichier où elles sont écrite sans les remplacer, elle va les mettre à la suite.
+
+Question 7 : Il faut utiliser la commande " find /var/log -name "*.log" -mtime -2 
+
+Question 8 : La commande va rechercher tout les fichier en .txt sauf ceux contenant "error" grâce à grep
